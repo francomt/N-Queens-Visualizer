@@ -19,11 +19,21 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  background: -moz-linear-gradient(
+    top,
+    rgba(254, 124, 124, 1) 0%,
+    rgba(94, 2, 2, 1) 100%
+  );
   background: -webkit-linear-gradient(
     top,
     rgba(254, 124, 124, 1) 0%,
     rgba(94, 2, 2, 1) 100%
   );
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 124, 124, 1) 0%,
+    rgba(94, 2, 2, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .row {
@@ -320,11 +330,21 @@ th {
   width: 275px;
   /* position: absolute; */
   margin: 10px;
+  background: -moz-linear-gradient(
+    top,
+    rgba(254, 124, 124, 1) 0%,
+    rgba(94, 2, 2, 1) 100%
+  );
   background: -webkit-linear-gradient(
     top,
     rgba(254, 124, 124, 1) 0%,
     rgba(94, 2, 2, 1) 100%
   );
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 124, 124, 1) 0%,
+    rgba(94, 2, 2, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .solution-text-container {
