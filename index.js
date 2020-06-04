@@ -215,6 +215,7 @@ startButton.addEventListener('click', () => {
     if (i >= solutions.length) {
       clearInterval(interval);
       startButton.disabled = false;
+      stopButton.disabled = true;
     }
     for (let board = i; board < solutions.length; board++) {
       const currentBoard = solutions[board];
