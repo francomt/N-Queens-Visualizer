@@ -216,6 +216,8 @@ startButton.addEventListener('click', () => {
       clearInterval(interval);
       startButton.disabled = false;
       stopButton.disabled = true;
+      speed.disabled = false;
+      selection.disabled = false;
     }
     for (let board = i; board < solutions.length; board++) {
       const currentBoard = solutions[board];
@@ -307,6 +309,8 @@ solutionButton.addEventListener('click', () => {
   } solutions found`;
   startButton.disabled = false;
   selection.disabled = false;
+  speed.disabled = false;
+  stopButton.disabled = true;
   const newSolutions = allSolutions[selection.value];
 
   const newContainer = document.createElement('div');
