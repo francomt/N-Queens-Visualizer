@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>N Queens Visualizer</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1 class="links">N-Queens Visualizer</h1>
+      <div class="links-container">
+        <a href="https://github.com/francomt/" class="links sub">Github</a>
+        <a href="https://linkedin.com/in/francotrelles/" class="links sub"
+          >LinkedIn</a
+        >
+      </div>
+    </nav>
+    <div class="container">
+      <div class="problem-container">
+        <div class="left-container">
+          <div class="options-container">
+            <p class="rules">
+              The n-queens puzzle is the problem of placing
+              <strong>n</strong> queens on an <strong>n×n</strong> chessboard
+              such that no two queens attack each other.
+            </p>
+            <div class="inputs-container">
+              <div class="sliders-container">
+                <div class="board-size-container">
+                  <div class="board-size">
+                    <label class="label-text">Board Size</label>
+                    <input
+                      id="selection"
+                      type="range"
+                      min="1"
+                      max="8"
+                      value="8"
+                    />
+                    <label class="label-text" id="size-label">8x8</label>
+                  </div>
+                </div>
+                <div class="speed-container">
+                  <div class="speed-selection">
+                    <label class="label-text">Speed</label>
+                    <input id="speed" type="range" min="1" max="5" value="3" />
+                  </div>
+                  <label class="label-text" id="speed-label">Fast</label>
+                </div>
+              </div>
+              <div class="solution-text-container">
+                <h1 class="solution-title-left">92 Possible Solutions</h1>
+                <h1 class="solution-title-right">0 Solutions Found</h1>
+              </div>
+              <div class="buttons-container">
+                <button id="start" type="button">
+                  Start
+                </button>
+                <button id="stop" type="button" disabled>
+                  Stop
+                </button>
+                <button id="solutions-button" type="button">
+                  Solutions
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="board-container"> -->
+          <div id="tables-container"></div>
+          <!-- </div> -->
+        </div>
+        <div class="right-container">
+          <div class="solutions-container">
+            <div id="solutions"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
